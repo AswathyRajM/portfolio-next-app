@@ -18,7 +18,7 @@ export default function Hero() {
           <button className="animated-btn">Download Resume</button>
         </div>
 
-        <div className="relative w-full aspect-square md:aspect-auto md:h-full hover:scale-105">
+        <div className="relative w-full aspect-square md:aspect-auto md:h-full hover:scale-105 mb-10 md:mb-0">
           <Image
             src="/Image.png"
             alt="Aswathy Raj"

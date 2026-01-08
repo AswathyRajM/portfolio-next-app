@@ -9,7 +9,7 @@ import { JSX, useRef } from "react";
 
 type Phase = "fly" | "down" | "wait" | "up";
 
-export default function Fly(): JSX.Element {
+export default function Fly({ baseY }: { baseY: number }): JSX.Element {
   const x: MotionValue<number> = useMotionValue(-20);
 
   const waveY: MotionValue<number> = useMotionValue(0);
@@ -19,9 +19,7 @@ export default function Fly(): JSX.Element {
   const downWaveProgress = useRef<number>(0);
   const upWaveProgress = useRef<number>(0);
 
-  const baseY: number = 60;
-
-  const time = useRef<number>(0);
+  const time = useRef<number>(10);
   const phase = useRef<Phase>("fly");
   const waitTimer = useRef<number>(0);
   const hasPausedAtCenter = useRef<boolean>(false);
@@ -127,13 +125,13 @@ export default function Fly(): JSX.Element {
   });
 
   return (
-    <div className="h-full w-full">
+    <div className="h-full w-full z-20">
       <motion.svg
         width="50"
         height="50"
         viewBox="0 0 50 50"
         style={{ x, y, rotate }}
-        className="overflow-visible"
+        className="overflow-visible w-9 h-9 md:w-12.5 md:h-12.5"
       >
         <svg
           viewBox="0 0 400 400"

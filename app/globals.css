@@ -3,7 +3,7 @@
 :root {
   --background: #fbf8cc;
   --yellow: #f5ee84;
-  --lightYellow: #fffbc4;
+  --lightYellow: pink;
   --dark-brown: #474306;
   --dark-blue: #03045e;
 }
@@ -196,7 +196,8 @@ body {
 }
 
 .animated-box:before {
-  background: var(--lightYellow);
+  background: pink;
+  /* background: var(--lightYellow); */
   border-radius: inherit;
   content: "";
   inset: 0;

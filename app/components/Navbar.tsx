@@ -11,15 +11,21 @@ export default function Navbar() {
         </div>
 
         {/* Middle - Nav Links */}
-        <div className="hidden md:flex items-center gap-x-16 text-[18px] ">
-          <Link href="/" className="link-hover">
-            Home
+        <div className="hidden md:flex items-center gap-x-7 text-[18px] ">
+          <Link href="#about" className="link-hover">
+            about
           </Link>
-          <Link href="/" className="link-hover">
-            About Us
+          <Link href="#experience" className="link-hover">
+            experience
           </Link>
-          <Link href="/" className="link-hover">
-            Contact
+          <Link href="#skills" className="link-hover">
+            skills
+          </Link>
+          <Link href="#projects" className="link-hover">
+            projects
+          </Link>
+          <Link href="#contact" className="link-hover">
+            contact
           </Link>
         </div>
 

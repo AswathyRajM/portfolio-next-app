@@ -1,5 +1,4 @@
-import SectionTitle from "../../SectionTitle";
-import SectionDetails from "../../SectionDetails";
+import SectionDetails from "../SectionDetails";
 import {
   SiCss3,
   SiExpress,
@@ -48,13 +47,11 @@ const BACKEND_SKILLS: Skill[] = [
   { name: "GraphQL", icon: SiGraphql },
 ];
 
-const MISC_SKILLS: Skill[] = [{ name: "Git", icon: SiGit }];
-
 function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
   return (
-    <div className="mb-8 w-full md:w-[50%]">
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <ul className="flex flex-wrap gap-3 md:gap-6">
+    <div className="mb-8 w-full  text-center">
+      <h3 className="text-xl font-semibold mb-3 md:mb-5">{title}</h3>
+      <ul className="flex flex-wrap gap-3 justify-center md:gap-6">
         {skills.map((skill) => (
           <li
             key={skill.name}
@@ -72,14 +69,13 @@ function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
 export default function Skills() {
   return (
     <section className=" h-full xl:min-h-full">
-      <SectionTitle title="Skills" />
-      <SectionDetails details="Technologies used to build and ship production systems." />
+      <SectionDetails
+        title="Skills"
+        details="Technologies used to build and ship production systems."
+      />
 
-      <div className="mt-10 flex flex-wrap">
-        <SkillGroup title="Front End" skills={FRONTEND_SKILLS} />
-        <SkillGroup title="Back End" skills={BACKEND_SKILLS} />
-        <SkillGroup title="Miscellaneous" skills={MISC_SKILLS} />
-      </div>
+      <SkillGroup title="Front End" skills={FRONTEND_SKILLS} />
+      <SkillGroup title="Back End" skills={BACKEND_SKILLS} />
     </section>
   );
 }

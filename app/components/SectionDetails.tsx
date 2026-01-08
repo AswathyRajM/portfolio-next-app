@@ -1,28 +1,20 @@
-import React from "react";
-
 function SectionDetails({
   details,
-  align = "left",
-  noMargin = false,
+  title,
 }: {
   details: string;
-  align?: "left" | "center" | "right";
   noMargin?: boolean;
+  title: string;
 }) {
-  const alignmentClasses = {
-    left: "text-left",
-    center: "text-center",
-    right: "text-right",
-  };
-
   return (
-    <p
-      className={`text-md md:text-xl ${!noMargin && "mb-10"} ${
-        alignmentClasses[align]
-      }`}
-    >
-      {details}
-    </p>
+    <div className="w-full flex items-center flex-col text-center">
+      <h2
+        className={`font-extrabold text-[50px] md:text-[80px] lg:text-[100px] lowercase text-yellow mb-2 md:mb-4 flex items-center text-center`}
+      >
+        <span>{title}.</span>
+      </h2>
+      <p className="text-md md:text-xl mb-10 text-center">{details}</p>
+    </div>
   );
 }
 

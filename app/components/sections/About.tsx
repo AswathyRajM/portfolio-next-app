@@ -1,15 +1,17 @@
 import React from "react";
-import SectionTitle from "../SectionTitle";
 import SectionDetails from "../SectionDetails";
 import { LuGraduationCap } from "react-icons/lu";
-import Experience from "./skills/Experience";
+import Experience from "./Experience";
 
 function About() {
   return (
-    <div>
-      <SectionTitle title="About me" align="center"/>
-      <SectionDetails noMargin align="center" details="I’m Aswathy Raj, a Full Stack Developer with 4+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions." />
-      {/* <div className="space-y-10">
+    <section id="about">
+      <SectionDetails
+        noMargin
+        title="About me"
+        details="I’m Aswathy Raj, a Full Stack Developer with 4+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions."
+      />
+      <div className="space-y-10">
         <ul className=" flex flex-col items-center justify-center text-center ">
           <h3 className="text-lg font-semibold flex items-center gap-2">
             <LuGraduationCap size={24} /> My Education
@@ -32,10 +34,10 @@ function About() {
             <p className="text-neutral-500">Kerala University</p>
             <p className="text-neutral-500">2013 - 2016</p>
           </li>
-        <Experience />
         </ul>
-      </div> */}
-    </div>
+        {/* <Experience /> */}
+      </div>
+    </section>
   );
 }
 
