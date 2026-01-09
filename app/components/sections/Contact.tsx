@@ -46,7 +46,7 @@ function Contact() {
 I'd love to hear from you!`}
       />
 
-      <ul className="flex gap-0 md:gap-10 items-center justify-center flex-wrap flex-col md:flex-row">
+      <ul className="flex gap-0 md:gap-10 items-center justify-center flex-wrap flex-col md:flex-row border rounded-md md:border-transparent">
         {CONTACTS.map(({ label, value, icon: Icon, href }) => {
           const content = (
             <div>
@@ -61,7 +61,7 @@ I'd love to hear from you!`}
           return (
             <li
               key={label}
-              className="p-4 w-full md:w-fit flex items-center justify-center md:justify-start"
+              className="p-4 w-full md:w-fit flex items-center justify-center md:justify-start md:border rounded-md "
             >
               {href ? (
                 <Link
