@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -15,7 +16,14 @@ export default function Hero() {
 
           <p className="text-md md:text-[28px] mb-5 md:mb-9">Based in India.</p>
 
-          <button className="animated-btn">Download Resume</button>
+          <Link
+            href="/Aswathy_Raj_4Senior_Fullstack_Developer.pdf"
+            download
+            target="_blank"
+            className="animated-btn"
+          >
+            Download Resume
+          </Link>
         </div>
 
         <div className="relative w-full aspect-square md:aspect-auto md:h-full hover:scale-105 mb-10 md:mb-0">
