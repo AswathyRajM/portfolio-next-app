@@ -3,7 +3,7 @@
 :root {
   --background: #fbf8cc;
   --yellow: #f5ee84;
-  --lightYellow: pink;
+  --lightYellow: #fffbc1;
   --dark-brown: #474306;
   --dark-blue: #03045e;
 }
@@ -11,6 +11,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--dark-blue);
+  --color-dark-brown: var(--dark-brown);
   --color-lightYellow: var(--lightYellow);
   --color-yellow: var(--yellow);
   --font-sans: var(--font-geist-sans);
@@ -19,6 +20,14 @@
 
 .link-hover {
   @apply relative transition hover:underline hover:decoration-wavy hover:underline-offset-8 duration-100 hover:text-yellow;
+}
+
+.prev-next-btn {
+  @apply absolute top-1/2 -translate-y-1/2 bg-yellow/50 border p-1 rounded-sm cursor-pointer text-xl;
+}
+
+.link-btn {
+  @apply flex items-center gap-2 text-sm! border rounded-sm hover:scale-105 p-1! active:bg-yellow;
 }
 
 body {
