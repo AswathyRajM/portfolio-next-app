@@ -63,7 +63,7 @@ export default function Projects() {
         {PROJECTS.map((project) => (
           <article
             key={project.title}
-            className="border rounded-lg overflow-hidden hover:shadow-lg transition"
+            className="border overflow-hidden hover:shadow-lg transition"
           >
             <ProjectCarousel images={project.image} />
 

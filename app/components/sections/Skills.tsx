@@ -49,9 +49,9 @@ const BACKEND_SKILLS: Skill[] = [
 
 function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
   return (
-    <div className="mb-8 w-full  text-center">
+    <div className="mb-8 w-full">
       <h3 className="text-xl font-semibold mb-3 md:mb-5">{title}</h3>
-      <ul className="flex flex-wrap gap-3 justify-center md:gap-6">
+      <ul className="flex flex-wrap gap-3 md:gap-6">
         {skills.map((skill) => (
           <li
             key={skill.name}
@@ -68,14 +68,18 @@ function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
 
 export default function Skills() {
   return (
-    <section className=" h-full xl:min-h-full">
-      <SectionDetails
-        title="Skills"
-        details="Technologies used to build and ship production systems."
-      />
-
-      <SkillGroup title="Front End" skills={FRONTEND_SKILLS} />
-      <SkillGroup title="Back End" skills={BACKEND_SKILLS} />
+    <section className="bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2 md:gap-10">
+      <div className=" h-full xl:min-h-full flex">
+        <SectionDetails
+          align="left"
+          title="Skills"
+          details="Technologies used to build and ship production systems."
+        />
+      </div>
+      <div className="">
+        <SkillGroup title="Front End" skills={FRONTEND_SKILLS} />
+        <SkillGroup title="Back End" skills={BACKEND_SKILLS} />
+      </div>
     </section>
   );
 }

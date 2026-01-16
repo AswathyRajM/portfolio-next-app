@@ -4,10 +4,10 @@ import Skills from "./components/sections/Skills";
 import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
-import FooterWithInsect from "./components/Footer";
 import ExperienceTimeline from "./components/sections/Experience";
 import type { Metadata } from "next";
 import JsonLd from "./components/JsonLd";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aswathyraj.vercel.app"),
@@ -74,18 +74,18 @@ export default function Home() {
   return (
     <main className="relative flex flex-col">
       <JsonLd />
-      <div className="w-full max-w-7xl mx-auto relative px-4 md:px-0 flex flex-col md:gap-20">
+      <div className="w-full max-w-7xl mx-auto relative px-4 md:px-0 flex flex-col gap-10 md:gap-20">
         <section className="lg:h-screen xl:h-full">
           <Navbar />
           <Hero />
         </section>
-        <About />
         <ExperienceTimeline />
-        <Skills />
         <Projects />
+        <Skills />
+        <About />
         <Contact />
       </div>
-      <FooterWithInsect />
+      <Footer />
     </main>
   );
 }

@@ -30,7 +30,7 @@ export default function ImageCarousel({
 
   return (
     <div className="w-full">
-      <div className="relative w-full h-50 overflow-hidden rounded-lg">
+      <div className="relative w-full h-50 overflow-hidden ">
         {/* Slides */}
         <div
           className="flex h-full transition-transform duration-500 ease-in-out"
@@ -66,8 +66,8 @@ export default function ImageCarousel({
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`h-2 w-2 rounded-full transition ${
-              current === index ? "bg-yellow" : "bg-dark-brown/20"
+            className={`h-2 w-2 transition ${
+              current === index ? "bg-primary" : "bg-dark-brown/20"
             }`}
           />
         ))}

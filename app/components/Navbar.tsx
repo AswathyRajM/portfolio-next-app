@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="w-full fixed left-0 right-0 opacity-100 pt-4 pb-4 md:pt-7 md:pb-7 backdrop-blur-lg z-50">
+    <nav className="w-full fixed left-0 right-0 opacity-100 pt-4 pb-4 md:pt-7 md:pb-7 z-50 bg-bg ">
       <div className="mx-auto px-4 md:px-0 flex max-w-7xl items-center justify-between">
         {/* Left - Logo / Name */}
         <div className="text-2xl font-semibold tracking-tight">
