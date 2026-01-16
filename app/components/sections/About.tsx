@@ -1,7 +1,5 @@
-import React from "react";
 import SectionDetails from "../SectionDetails";
 import { LuGraduationCap } from "react-icons/lu";
-import Experience from "./Experience";
 
 function About() {
   return (

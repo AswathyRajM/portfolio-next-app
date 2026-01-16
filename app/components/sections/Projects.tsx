@@ -1,13 +1,13 @@
 import Link from "next/link";
 import SectionDetails from "../SectionDetails";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import ProjectCarousel from "../ImageCarousel";
+import Image from "next/image";
 
 type Project = {
   title: string;
   description: string;
   tech: string;
-  image: string[];
+  image: string;
   github?: string;
   live?: string;
 };
@@ -18,11 +18,7 @@ const PROJECTS: Project[] = [
     description:
       "A responsive website for a premium French bakery supplier, presenting product ranges, catalogs, and bakery solutions with clear, structured navigation.",
     tech: "Next.js, TypeScript, Tailwind CSS, Saleor CMS, Graphql",
-    image: [
-      "/projects/bridor1.webp",
-      "/projects/bridor2.webp",
-      "/projects/bridor3.webp",
-    ],
+    image: "/projects/bridor.png",
     live: "https://www.bridor.sa/en-SA",
   },
   {
@@ -30,11 +26,7 @@ const PROJECTS: Project[] = [
     description:
       "Secure fintech platform with authentication, document uploads, and APIs.",
     tech: "React, Node.js, Express, MongoDB",
-    image: [
-      "/projects/bridor1.webp",
-      "/projects/bridor2.webp",
-      "/projects/bridor3.webp",
-    ],
+    image: "/projects/bridor.png",
     github: "https://github.com/username/fintech-app",
   },
   {
@@ -42,30 +34,32 @@ const PROJECTS: Project[] = [
     description:
       "Personal portfolio showcasing projects, experience, and animations.",
     tech: "Next.js, Tailwind CSS, Framer Motion",
-    image: [
-      "/projects/bridor1.webp",
-      "/projects/bridor2.webp",
-      "/projects/bridor3.webp",
-    ],
+    image: "/projects/bridor.png",
     live: "https://yourname.dev",
   },
 ];
 
 export default function Projects() {
   return (
-    <section>
+    <section id="projects">
       <SectionDetails
         title="Projects"
         details="A selection of projects I’ve built and shipped."
       />
-
       <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
           <article
             key={project.title}
-            className="border overflow-hidden hover:shadow-lg transition"
+            className="overflow-hisdden h-fit bg-[#F5F1E8] transition flex flex-col border"
           >
-            <ProjectCarousel images={project.image} />
+            <div className="relative w-full h-[30vh] shrink-0">
+              <Image
+                src={project.image}
+                alt={`Project image ${project.title}`}
+                fill
+                className="object-cover"
+              />
+            </div>
 
             <div className="p-5 space-y-3">
               <h3 className="text-xl font-semibold">{project.title}</h3>

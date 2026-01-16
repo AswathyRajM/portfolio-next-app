@@ -55,7 +55,7 @@ function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
         {skills.map((skill) => (
           <li
             key={skill.name}
-            className="flex items-center gap-2 border rounded-sm px-2 py-1 transition-transform hover:scale-105"
+            className="flex items-center gap-2 border px-2 py-1"
           >
             <skill.icon size={24} />
             <p className="text-base">{skill.name}</p>
@@ -68,7 +68,10 @@ function SkillGroup({ title, skills }: { title: string; skills: Skill[] }) {
 
 export default function Skills() {
   return (
-    <section className="bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2 md:gap-10">
+    <section
+      id="skills"
+      className="md:mt-10 bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2 md:gap-10"
+    >
       <div className=" h-full xl:min-h-full flex">
         <SectionDetails
           align="left"

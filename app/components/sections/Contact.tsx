@@ -39,7 +39,7 @@ const CONTACTS: ContactItem[] = [
 
 function Contact() {
   return (
-    <section>
+    <section id="contact">
       <SectionDetails
         title="Contact"
         details={`Have a question or want to work together? Feel free to drop me a message.
@@ -61,7 +61,7 @@ I'd love to hear from you!`}
           return (
             <li
               key={label}
-              className="p-4 w-full md:w-fit flex items-center justify-center md:justify-start md:border "
+              className="bg-[#E9E6DD] p-4 w-full md:w-fit flex items-center justify-center md:justify-start md:border "
             >
               {href ? (
                 <Link

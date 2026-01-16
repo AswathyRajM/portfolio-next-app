@@ -80,8 +80,8 @@ export default function Home() {
           <Hero />
         </section>
         <ExperienceTimeline />
-        <Projects />
         <Skills />
+        <Projects />
         <About />
         <Contact />
       </div>

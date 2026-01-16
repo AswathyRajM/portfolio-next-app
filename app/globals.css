@@ -19,6 +19,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
+section {
+  scroll-margin-top: 15vh;
+}
+
 .link-hover {
   @apply relative transition hover:underline hover:decoration-wavy hover:underline-offset-8 duration-100 hover:text-primary;
 }
@@ -28,7 +32,7 @@
 }
 
 .link-btn {
-  @apply flex items-center gap-2 text-sm! border rounded-sm hover:scale-105 p-1! active:bg-primary;
+  @apply flex items-center gap-2 text-sm! border rounded-sm hover:scale-105 p-1! active:bg-primary hover:bg-bg;
 }
 
 html {
