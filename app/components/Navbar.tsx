@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from "react-icons/fa";
 
 export default function Navbar() {
   return (
@@ -29,30 +29,40 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Right - Social Icons */}
         <div className="flex items-center gap-7">
-          <a
+          <Link
             href="https://github.com/aswathyrajm"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-600 transition"
+            className="hover:text-primary transition"
           >
             <FaGithub size={20} />
-          </a>
-          <a
+          </Link>
+
+          <Link
             href="https://linkedin.com/in/aswathyrajm"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-gray-600 transition"
+            className="hover:text-primary transition"
           >
             <FaLinkedin size={20} />
-          </a>
-          <a
+          </Link>
+
+          <Link
+            href="https://medium.com/@aswathyraj"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition"
+          >
+            <FaMedium size={20} />
+          </Link>
+
+          <Link
             href="mailto:aswathyraj767@gmail.com"
-            className="hover:text-gray-600 transition"
+            className="hover:text-primary transition"
           >
             <FaEnvelope size={20} />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

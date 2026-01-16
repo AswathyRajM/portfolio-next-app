@@ -70,7 +70,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="md:mt-10 bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2 md:gap-10"
+      className="md:mt-10 bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2"
     >
       <div className=" h-full xl:min-h-full flex">
         <SectionDetails
@@ -79,7 +79,7 @@ export default function Skills() {
           details="Technologies used to build and ship production systems."
         />
       </div>
-      <div className="">
+      <div>
         <SkillGroup title="Front End" skills={FRONTEND_SKILLS} />
         <SkillGroup title="Back End" skills={BACKEND_SKILLS} />
       </div>

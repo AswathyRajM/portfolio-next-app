@@ -22,20 +22,22 @@ const PROJECTS: Project[] = [
     live: "https://www.bridor.sa/en-SA",
   },
   {
-    title: "Fintech Web Platform",
+    title: "Movie Browser – Infinite Scroll & Search",
     description:
-      "Secure fintech platform with authentication, document uploads, and APIs.",
-    tech: "React, Node.js, Express, MongoDB",
-    image: "/projects/bridor.png",
+      "React-based movie browser with infinite scrolling and live search functionality. Built with efficient state management and API integration for smooth, responsive user experience.",
+    tech: "React, Material UI, Redux Toolkit, Axios, Infinite Scroll",
+    image: "/projects/movie.png",
     github: "https://github.com/username/fintech-app",
+    live: "https://movie-browser-ashy.vercel.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Media Player – Audio & Video Controls",
     description:
-      "Personal portfolio showcasing projects, experience, and animations.",
-    tech: "Next.js, Tailwind CSS, Framer Motion",
+      "React-based media player with full audio and video control. Includes play, pause, stop, and restart functionality, built with clean, modular state management for reliable performance.",
+    tech: "React.Js, CSS3",
     image: "/projects/bridor.png",
-    live: "https://yourname.dev",
+    live: "https://audio-player-iota.vercel.app",
+    github: "https://github.com/AswathyRajM/audio-player",
   },
 ];
 
@@ -44,13 +46,20 @@ export default function Projects() {
     <section id="projects">
       <SectionDetails
         title="Projects"
-        details="A selection of projects I’ve built and shipped."
+        details="Most of my professional work was built for internal systems or client-owned platforms and isn’t publicly accessible."
       />
-      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+      {/* <div className="ml-auto w-fit p-1 link-btn mb-5">
+        <Link href="/projects" target="_blank" className="font-xl">
+          See All
+        </Link>
+        <WiDirectionRight size={24} />
+      </div> */}
+      <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
         {PROJECTS.map((project) => (
           <article
             key={project.title}
-            className="overflow-hisdden h-fit bg-[#F5F1E8] transition flex flex-col border"
+            className="overflow-hidden h-fit bg-[#F5F1E8] transition flex flex-col border"
           >
             <div className="relative w-full h-[30vh] shrink-0">
               <Image

@@ -61,7 +61,7 @@ I'd love to hear from you!`}
           return (
             <li
               key={label}
-              className="bg-[#E9E6DD] p-4 w-full md:w-fit flex items-center justify-center md:justify-start md:border "
+              className="bg-bg hover:bg-[#dedbd2] p-4 w-full md:w-fit flex items-center justify-center md:justify-start md:border "
             >
               {href ? (
                 <Link

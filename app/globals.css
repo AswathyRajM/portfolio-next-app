@@ -20,23 +20,20 @@
 }
 
 section {
-  scroll-margin-top: 15vh;
+  scroll-margin-top: 14vh;
 }
 
 .link-hover {
   @apply relative transition hover:underline hover:decoration-wavy hover:underline-offset-8 duration-100 hover:text-primary;
 }
 
-.prev-next-btn {
-  @apply absolute top-1/2 -translate-y-1/2 bg-primary/50 border p-1 rounded-sm cursor-pointer text-xl;
-}
-
 .link-btn {
-  @apply flex items-center gap-2 text-sm! border rounded-sm hover:scale-105 p-1! active:bg-primary hover:bg-bg;
+  @apply flex items-center gap-2 text-sm! border hover:scale-105 p-1! active:bg-primary;
 }
 
 html {
   @apply antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
