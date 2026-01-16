@@ -18,7 +18,7 @@ const PROJECTS: Project[] = [
     description:
       "A responsive website for a premium French bakery supplier, presenting product ranges, catalogs, and bakery solutions with clear, structured navigation.",
     tech: "Next.js, TypeScript, Tailwind CSS, Saleor CMS, Graphql",
-    image: "/projects/bridor.png",
+    image: "/projects/bridor.webp",
     live: "https://www.bridor.sa/en-SA",
   },
   {
@@ -26,19 +26,28 @@ const PROJECTS: Project[] = [
     description:
       "React-based movie browser with infinite scrolling and live search functionality. Built with efficient state management and API integration for smooth, responsive user experience.",
     tech: "React, Material UI, Redux Toolkit, Axios, Infinite Scroll",
-    image: "/projects/movie.png",
+    image: "/projects/movie.webp",
     github: "https://github.com/username/fintech-app",
     live: "https://movie-browser-ashy.vercel.app/",
   },
   {
-    title: "Media Player – Audio & Video Controls",
+    title: "Pizzateria – Online Pizza Ordering App",
     description:
-      "React-based media player with full audio and video control. Includes play, pause, stop, and restart functionality, built with clean, modular state management for reliable performance.",
-    tech: "React.Js, CSS3",
-    image: "/projects/bridor.png",
-    live: "https://audio-player-iota.vercel.app",
-    github: "https://github.com/AswathyRajM/audio-player",
+      "A full-stack pizza ordering application with cart, a dynamic menu, designed to deliver a smooth and responsive ordering experience.",
+    tech: "Next.js, React, Supabase, Zustand, Framer Motion, Lodash Throttle, React Icons",
+    image: "/projects/pizzateria.webp",
+    github: "https://github.com/AswathyRajM/pizzateria-nextjs",
+    live: "https://pizzateria-app.vercel.app/",
   },
+  // {
+  //   title: "Media Player – Audio & Video Controls",
+  //   description:
+  //     "React-based media player with full audio and video control. Includes play, pause, stop, and restart functionality, built with clean, modular state management for reliable performance.",
+  //   tech: "React.Js, CSS3",
+  //   image: "/projects/bridor.webp",
+  //   live: "https://audio-player-iota.vercel.app",
+  //   github: "https://github.com/AswathyRajM/audio-player",
+  // },
 ];
 
 export default function Projects() {
