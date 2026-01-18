@@ -19,7 +19,7 @@ const PROJECTS: Project[] = [
       "A responsive website for a premium French bakery supplier, presenting product ranges, catalogs, and bakery solutions with clear, structured navigation.",
     tech: "Next.js, TypeScript, Tailwind CSS, Saleor CMS, Graphql",
     image: "/projects/bridor.webp",
-    live: "https://www.bridor.sa/en-SA",
+    live: "https://www.bridor.sa/en-PL",
   },
   {
     title: "Movie Browser – Infinite Scroll & Search",
