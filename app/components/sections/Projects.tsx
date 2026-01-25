@@ -46,7 +46,7 @@ const PROJECTS: Project[] = [
     tech: "React, React Router DOM, JavaScript, CSS, React Icons, localStorage",
     image: "/projects/dnd.webp",
     github: "https://github.com/AswathyRajM/dnd-react-app",
-    live: "https://dnd-react-app.vercel.app/boards",
+    live: "https://dnd-react-app.vercel.app",
   },
 
   // {
