@@ -21,15 +21,15 @@ const PROJECTS: Project[] = [
     image: "/projects/bridor.webp",
     live: "https://www.bridor.sa/en-PL",
   },
-  {
-    title: "Movie Browser – Infinite Scroll & Search",
-    description:
-      "React-based movie browser with infinite scrolling and live search functionality. Built with efficient state management and API integration for smooth, responsive user experience.",
-    tech: "React, Material UI, Redux Toolkit, Axios, Infinite Scroll",
-    image: "/projects/movie.webp",
-    github: "https://github.com/username/fintech-app",
-    live: "https://movie-browser-ashy.vercel.app/",
-  },
+  // {
+  //   title: "Movie Browser – Infinite Scroll & Search",
+  //   description:
+  //     "React-based movie browser with infinite scrolling and live search functionality. Built with efficient state management and API integration for smooth, responsive user experience.",
+  //   tech: "React, Material UI, Redux Toolkit, Axios, Infinite Scroll",
+  //   image: "/projects/movie.webp",
+  //   github: "https://github.com/username/fintech-app",
+  //   live: "https://movie-browser-ashy.vercel.app/",
+  // },
   {
     title: "Pizzateria – Online Pizza Ordering App",
     description:
@@ -39,6 +39,16 @@ const PROJECTS: Project[] = [
     github: "https://github.com/AswathyRajM/pizzateria-nextjs",
     live: "https://pizzateria-app.vercel.app/",
   },
+  {
+    title: "Kanban Board – Drag & Drop Task Manager",
+    description:
+      "A React-based task management app with custom drag-and-drop to reorder and move tasks across lists, including board/list/task CRUD and localStorage persistence.",
+    tech: "React, React Router DOM, JavaScript, CSS, React Icons, localStorage",
+    image: "/projects/dnd.webp",
+    github: "https://github.com/AswathyRajM/dnd-react-app",
+    live: "https://dnd-react-app.vercel.app/boards",
+  },
+
   // {
   //   title: "Media Player – Audio & Video Controls",
   //   description:
