@@ -28,41 +28,68 @@ export default function Navbar() {
             contact
           </Link>
         </div>
-
         <div className="flex items-center gap-7">
-          <Link
-            href="https://github.com/aswathyrajm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition"
-          >
-            <FaGithub size={20} />
-          </Link>
+          {/* GitHub */}
+          <div className="relative group">
+            <Link
+              href="https://github.com/aswathyrajm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+            >
+              <FaGithub size={20} />
+            </Link>
 
-          <Link
-            href="https://linkedin.com/in/aswathyrajm"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition"
-          >
-            <FaLinkedin size={20} />
-          </Link>
+            <span className="border pointer-events-none absolute left-1/2 -translate-x-1/2 top-9.5 whitespace-nowrap px-2 py-1 text-xs opacity-0 transition group-hover:opacity-100">
+              GitHub
+            </span>
+          </div>
 
-          <Link
-            href="https://medium.com/@aswathyraj"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary transition"
-          >
-            <FaMedium size={20} />
-          </Link>
+          {/* LinkedIn */}
+          <div className="relative group">
+            <Link
+              href="https://linkedin.com/in/aswathyrajm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+            >
+              <FaLinkedin size={20} />
+            </Link>
 
-          <Link
-            href="mailto:aswathyraj767@gmail.com"
-            className="hover:text-primary transition"
-          >
-            <FaEnvelope size={20} />
-          </Link>
+            <span className="border pointer-events-none absolute left-1/2 -translate-x-1/2 top-9.5 whitespace-nowrap px-2 py-1 text-xs opacity-0 transition group-hover:opacity-100">
+              LinkedIn
+            </span>
+          </div>
+
+          {/* Medium */}
+          <div className="relative group">
+            <Link
+              href="https://medium.com/@aswathyraj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+            >
+              <FaMedium size={20} />
+            </Link>
+
+            <span className="border pointer-events-none absolute left-1/2 -translate-x-1/2 top-9.5 whitespace-nowrap px-2 py-1 text-xs opacity-0 transition group-hover:opacity-100">
+              Medium
+            </span>
+          </div>
+
+          {/* Email */}
+          <div className="relative group">
+            <Link
+              href="mailto:aswathyraj767@gmail.com"
+              className="hover:text-primary transition"
+            >
+              <FaEnvelope size={20} />
+            </Link>
+
+            <span className="border pointer-events-none absolute left-1/2 -translate-x-1/2 top-9.5 whitespace-nowrap px-2 py-1 text-xs opacity-0 transition group-hover:opacity-100">
+              Email
+            </span>
+          </div>
         </div>
       </div>
     </nav>

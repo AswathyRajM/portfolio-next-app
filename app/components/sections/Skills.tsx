@@ -2,7 +2,6 @@ import SectionDetails from "../SectionDetails";
 import {
   SiCss3,
   SiExpress,
-  SiGit,
   SiGraphql,
   SiHtml5,
   SiJavascript,
