@@ -42,7 +42,7 @@ const PROJECTS: Project[] = [
   {
     title: "Kanban Board – Drag & Drop Task Manager",
     description:
-      "A React-based task management app with custom drag-and-drop to reorder and move tasks across lists, including board/list/task CRUD and localStorage persistence.",
+      "A task management app with custom drag-and-drop to reorder and move tasks across lists, including localStorage persistence.",
     tech: "React, React Router DOM, JavaScript, CSS, React Icons, localStorage",
     image: "/projects/dnd.webp",
     github: "https://github.com/AswathyRajM/dnd-react-app",
