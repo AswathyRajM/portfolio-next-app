@@ -71,7 +71,7 @@ export default function Skills() {
       id="skills"
       className="md:mt-10 bg-[#F4F0E7] grid grid-cols-1 md:grid-cols-2"
     >
-      <div className=" h-full xl:min-h-full flex">
+      <div className="h-full xl:min-h-full flex">
         <SectionDetails
           align="left"
           title="Skills"

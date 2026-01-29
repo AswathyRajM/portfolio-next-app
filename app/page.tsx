@@ -72,11 +72,10 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col">
+    <>
       <JsonLd />
       <div className="w-full max-w-7xl mx-auto relative px-4 md:px-0 flex flex-col gap-10 md:gap-20">
         <section className="lg:h-screen xl:h-full">
-          <Navbar />
           <Hero />
         </section>
         <ExperienceTimeline />
@@ -85,7 +84,6 @@ export default function Home() {
         <About />
         <Contact />
       </div>
-      <Footer />
-    </main>
+    </>
   );
 }
