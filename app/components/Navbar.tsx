@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaMedium } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="w-full fixed left-0 right-0 opacity-100 pt-4 pb-4 md:pt-7 md:pb-7 z-50 bg-bg ">
+    <nav className="w-full fixed left-0 right-0 opacity-100 pt-4 pb-4 md:pt-7 md:pb-7 z-50 bg-bg px-2">
       <div className="mx-auto px-4 md:px-0 flex max-w-7xl items-center justify-between">
         {/* Left - Logo / Name */}
         <div className="text-2xl font-semibold tracking-tight">
@@ -11,7 +11,7 @@ export default function Navbar() {
         </div>
 
         {/* Middle - Nav Links */}
-        <div className="hidden md:flex items-center gap-x-7 text-[18px] ">
+        <div className="hidden md:flex items-center gap-x-5 text-[18px] ">
           <Link href="#about" className="link-hover">
             about
           </Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
             contact
           </Link>
         </div>
-        <div className="flex items-center gap-7">
+        <div className="flex items-center gap-5">
           {/* GitHub */}
           <div className="relative group">
             <Link

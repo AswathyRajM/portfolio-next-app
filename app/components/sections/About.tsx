@@ -13,7 +13,7 @@ function About() {
         <SectionDetails
           align="left"
           title="About me"
-          details="I’m Aswathy Raj, a Full Stack Developer based in Ernakulam, Kerala, India, with 4+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions."
+          details="I’m Aswathy Raj, a Full Stack Developer based in Ernakulam, Kerala, India, with 5+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions."
         />
       </div>
       <div className="md:space-y-10">

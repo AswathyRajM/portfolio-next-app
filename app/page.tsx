@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Full Stack Developer with 4+ years of experience building scalable web applications using Next.js, React, Node.js, and TypeScript.",
+    "Full Stack Developer with 5+ years of experience building scalable web applications using Next.js, React, Node.js, and TypeScript.",
 
   keywords: [
     "Aswathy Raj",

@@ -1,8 +1,17 @@
 import SectionDetails from "../SectionDetails";
 export const experience = [
   {
+    company: "InApp Technologies",
+    role: "Senior Software Engineer",
+    duration: "Aug 2024 – Sep 2025",
+    location: "Remote",
+    tech: "Next.js, React, Node.js, TypeScript, Saleor, Sanity, Graphql",
+    description:
+      "Delivered SEO-focused, high-performance products and supported scalable production architectures.",
+  },
+  {
     company: "Tamcherry Technologies",
-    role: "Full Stack Developer",
+    role: "Full Stack Developer (Contract Position)",
     duration: "Aug 2024 – Sep 2025",
     location: "Remote",
     tech: "Next.js, React, Node.js, TypeScript, Saleor, Sanity, Graphql",
@@ -62,7 +71,7 @@ function ExperienceTimeline() {
       <div className="bg">
         <SectionDetails
           title="experience"
-          details="I’m Aswathy Raj, a Full Stack Developer with 4+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions."
+          details="I’m Aswathy Raj, a Full Stack Developer with 5+ years of experience in Next.js, React, Node.js, and TypeScript. I build web applications, internal tools, and consumer products, focusing on clean code and practical solutions."
         />
         <div className="relative max-w-5xl mx-auto md:mt-2 md:bg-[#F4F0E7] opacity-100">
           {/* Center line */}
@@ -75,7 +84,7 @@ function ExperienceTimeline() {
               return (
                 <div
                   key={index}
-                  className={`relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 hover:bg-bg p-2 md:p-4 group ${
+                  className={`border border-transparent hover:border-primary relative grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 hover:bg-bg p-2 md:p-4 group ${
                     !isEven ? "bg-bg md:bg-transparent " : ""
                   }`}
                 >

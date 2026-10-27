@@ -13,7 +13,7 @@ export default function Hero() {
           <h1 className="text-md md:text-[28px] mb-5 md:mb-9">
             <span className="block">Hi, I’m Aswathy</span>
             <span className="block">
-              4+ years experience in building production-ready web applications.
+              5+ years experience in building production-ready web applications.
             </span>
           </h1>
           <Link
